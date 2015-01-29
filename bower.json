@@ -1,0 +1,15 @@
+{
+  "name": "Day-16",
+  "version": "0.0.0",
+  "authors": [
+    "Hugh J. Devore <hughdevore@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
