@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var getMessages = function() {
 		$.get(
-			'http://tiny-pizza-server.herokuapp.com/collections/austinfe',
+			'https://group-message4792.herokuapp.com/',
 			function(messages) {
 				render(messages);
 			},
@@ -25,10 +25,10 @@ $(document).ready(function() {
 
 	function postMessage() {
 		$.post(
-			'http://tiny-pizza-server.herokuapp.com/collections/austinfe',
+			'https://group-message4792.herokuapp.com/',
 			{
-				message: $('#text').val(),
-				name: 'A-Team'
+				name: $('#username').val(),
+				message: $('#message').val(),
 			},
 			function(message) {
 				console.log(message)
