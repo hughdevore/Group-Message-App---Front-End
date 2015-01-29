@@ -1,21 +1,27 @@
 $(document).ready(function() {
 	var getMessages = function() {
 		$.get(
-			'https://group-message4792.herokuapp.com/',
-			function(messages) {
-				render(messages);
+			'https://group-message4792.herokuapp.com/users.json',
+			function(users) {
+				render(users);
 			},
 			'json'
 		);
+		console.log('GET WORKS!')
 	};
 
-	var render = function(messages) {
-		var messageRow = _.template('<div class="row"><div><%= message %></div><div><%= name %></div></div>')
+	var render = function(user) {
+		var messageRow = _.template('<div class="instance"><div class="user">User:</div><div class="name"><%= username %></div><div class="message">Message:</div><div class="content"><%= message %></div><div class="stamp">Time:</div><div class="time"><%= created_at %></div></div>')
+
+		
 		$('#message-board').html('');
-		for(var i=0; i<messages.length; i++) {
-			if(messages[i].message && messages[i].name) {
-				$('#message-board').append(messageRow(messages[i]));
-			}
+		
+		for(var i=0; i<user.length; i++) {
+
+				$('#message-board').append(messageRow(user[i]));
+
+				console.log()
+
 		}
 	};
 
@@ -25,14 +31,14 @@ $(document).ready(function() {
 
 	function postMessage() {
 		$.post(
-			'https://group-message4792.herokuapp.com/',
-			{
-				name: $('#username').val(),
-				message: $('#message').val(),
+			'https://group-message4792.herokuapp.com/users',
+			{user: {username: $('#username').val(),
+					message: $('#message').val(),
+					chatroom: $('#chatroom').val()}
 			},
-			function(message) {
-				console.log(message)
-				// render(messages);
+			function(users) {
+				console.log(users)
+				render(users);
 			},
 			'json'
 		);

@@ -1,3 +1,92 @@
-.row, input {
-	margin-bottom: 20px;
+body h1 {
+	font-family: 'Righteous', cursive;
+	margin-left: 2em;
+}
+
+body {
+	font-family: 'Inder', sans-serif;
+}
+
+
+
+#inputs {
+	margin: .5em 0em .5em 0em;
+	padding: 0em 0em 1em 0em;
+	display: inline-block;
+	border: 2px solid gray;
+	width: 100%;
+	text-align: center;
+}
+
+.inputs {
+	display: inline-block;
+	padding: 1em;
+	border: 1px solid gray;
+}
+
+.inputs div {
+
+	text-align: left;
+}
+
+#message-board {
+	background-color: gray;
+	border: 2px solid black;
+	padding: 3em;
+	color: white;
+}
+
+
+
+
+
+
+#message-board .user {
+	text-align: left;
+	display: inline-block;
+	width: 25%;
+/*	padding: 0em .25em 0em .25em;*/
+}
+#message-board .name {
+	text-align: left;
+	display: inline-block;
+	width: 75%;
+/*	padding: 0em .25em 0em .25em;*/
+}
+
+
+
+#message-board .message {
+	text-align: left;
+	display: inline-block;
+	width: 25%;
+/*	padding: .5em;*/
+}
+#message-board .content {
+	text-align: left;
+	display: inline-block;
+	width: 75%;
+/*	padding: .5em;*/
+}
+
+
+
+
+#message-board .stamp {
+	text-align: left;
+	display: inline-block;
+	width: 25%;
+/*	padding: .5em;*/
+}
+#message-board .time {
+	text-align: left;
+	display: inline-block;
+	width: 75%;
+/*	padding: .5em;*/
+}
+
+
+#message-board .instance {
+	display: block;
+	padding: 0em 0em 1em 0em;
 }

@@ -4,22 +4,42 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Group Message App</title>
+    <title>hAPIchat</title>
+    <link href='http://fonts.googleapis.com/css?family=Inder|Righteous' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div>GROUP MESSAGE APP
-    <div>Username:</div>
-      <input type='Text' id="username">
-    <div>Message:</div>
-      <input type='Text' id="message">
-    <button id="send">Send</button> 
-    <div>
-    <main id="message-board">
+    <h1>hAPIchat</h1>
+
+    <section id="inputs">
+        <H2 id="h-input">Chat Inputs</h2>
+        
+        <div class='inputs'>    
+            <div>Chatroom:</div>
+            <input type='Text' id="chatroom">
+        </div>
+
+        <div class='inputs'>
+            <div>Username:</div>
+            <input type='Text' id="username">
+        </div>
+
+        <div class='inputs'>
+            <div>Message:</div>
+            <input type='Text' id="message">
+            <button id="send">Send</button> 
+        </div>
+
+    </section>
+    
+    <h2 id="mb-input">Message Board</h2>
+    <table id="message-board">
+
       
-    </main>
+    </table>
+
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/lodash/lodash.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
