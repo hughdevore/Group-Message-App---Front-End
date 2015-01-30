@@ -6,22 +6,20 @@ body h1 {
 body {
 	font-family: 'Inder', sans-serif;
 	background-color: rgb(0, 192, 243);
-	margin: 0 10% 0 5%;
+	margin: 0% 8% 0% 8%;
+
 }
 
-/*#main {
-	width: 100%;
-}*/
+
 
 #inputs {
-	margin: .5em .5em .5em .5em;
-	padding: 0em 0em 1em 0em;
 	display: inline-block;
 	border: 2px solid rgb(167, 206, 55);
 	width: 100%;
 	text-align: center;
 	background-color: rgb(238, 76, 155);
-
+	padding-bottom: 1em;
+	color: white;
 }
 
 .inputs {
@@ -30,6 +28,21 @@ body {
 	border: 1px solid rgb(167, 206, 55);
 	margin: .5em .5em .5em .5em;
 }
+.msg {
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+	width: 80%;
+	border: 1px solid rgb(167, 206, 55);
+	text-align: left;
+	
+	margin-left: 8%;
+
+}
+#message {
+	width: 80%;
+}
+
 
 .inputs div {
 
@@ -41,14 +54,19 @@ input {
 	background-color: rgb(0, 192, 243);
 }
 
+
+
+#board {
+	width: 100%;
+}
 #message-board {
 	border: 2px solid rgb(238, 76, 155);
 	padding: 1em;
 	color: rgb(93, 45, 145);
 	background-color: rgb(167, 206, 55);
 	overflow: auto;
+	box-sizing: border-box;
 	height: 200px;
-	width:100%;
 }
 
 

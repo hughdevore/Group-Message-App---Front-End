@@ -10,31 +10,32 @@
   </head>
   <body>
     <h1>hAPIchat!</h1>
-	<section id="main">
-	    <section id="inputs">
-	        <H2 id="h-input">Chat Inputs</h2>
-	        
-	        <div class='inputs'>    
-	            <div>Chatroom:</div>
-	            <input type='Text' id="chatroom">
-	        </div>
+    <section id="inputs">
+        <H2 id="h-input">Chat Inputs</h2>
+        
+        <div class='inputs'>    
+            <div>Chatroom:</div>
+            <input type='Text' id="chatroom">
+        </div>
 
-	        <div class='inputs'>
-	            <div>Username:</div>
-	            <input type='Text' id="username">
-	        </div>
+        <div class='inputs'>
+            <div>Username:</div>
+            @<input type='Text' id="username">
+        </div>
 
-	        <div class='inputs'>
-	            <div>Message:</div>
-	            <input type='Text' id="message">
-	            <button id="send">Send</button> 
-	        </div>
-
-		</section>    
-	    <h2 id="mb-input">Message Board</h2>
-	    <section id="message-board">
-	    </section> 
+        <div class='inputs, msg'>
+            <div>Message:</div>
+            <input type='Text' id="message">
+            <button id="send">Send</button> 
+        </div>
 	</section>
+
+	<section id="board"> 
+    	<h2 id="mb-input">Message Board</h2>
+    	<section id="message-board">
+    	</section> 
+	</section>
+
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/lodash/lodash.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
