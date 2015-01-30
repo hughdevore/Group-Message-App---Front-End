@@ -3,6 +3,8 @@ $(document).ready(function() {
 		$.get(
 			'https://group-message4792.herokuapp.com/users.json',
 			function(users) {
+				
+				// users = users.keys(obj).sort().reverse();
 				render(users);
 			},
 			'json'
@@ -11,16 +13,18 @@ $(document).ready(function() {
 	};
 
 	var render = function(user) {
-		var messageRow = _.template('<div class="instance"><div class="user">User:</div><div class="name"><%= username %></div><div class="message">Message:</div><div class="content"><%= message %></div><div class="stamp">Time:</div><div class="time"><%= created_at %></div></div>')
 
-		
+		var messageRow = _.template('<div class="instance"><div class="user">User:</div><div class="name"><%= username %></div><div class="message">Message:</div><div class="content"><%= message %></div><div class="stamp">Time:</div><div class="time"><%= time_stamp %></div></div>')
+
 		$('#message-board').html('');
+
+		var room = $('#chatroom').val();
 		
 		for(var i=0; i<user.length; i++) {
 
-				$('#message-board').append(messageRow(user[i]));
-
-				console.log()
+			if (room == user[i].chatroom) {
+				$('#message-board').prepend(messageRow(user[i]));
+			}
 
 		}
 	};
@@ -45,5 +49,6 @@ $(document).ready(function() {
 	}
 
 	$('#send').on('click',postMessage);
+
 
 });
