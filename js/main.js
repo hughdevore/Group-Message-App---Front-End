@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	var getMessages = function() {
 		$.get(
 			'https://group-message4792.herokuapp.com/users.json',
@@ -9,7 +10,7 @@ $(document).ready(function() {
 			},
 			'json'
 		);
-		console.log('GET WORKS!')
+		console.log('Got!')
 	};
 
 	var render = function(user) {
@@ -50,5 +51,6 @@ $(document).ready(function() {
 
 	$('#send').on('click',postMessage);
 
+	$('#message').emoticonize();
 
 });
