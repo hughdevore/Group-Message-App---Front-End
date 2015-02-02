@@ -10,11 +10,16 @@ body {
 
 }
 
-
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-bottom: -0.25em;
+}
 
 #inputs {
 	display: inline-block;
-	border: 2px solid rgb(167, 206, 55);
+	border: 5px solid rgb(167, 206, 55);
 	width: 100%;
 	text-align: center;
 	background-color: rgb(238, 76, 155);
@@ -60,7 +65,7 @@ input {
 	width: 100%;
 }
 #message-board {
-	border: 2px solid rgb(238, 76, 155);
+	border: 5px solid rgb(238, 76, 155);
 	padding: 1em;
 	color: rgb(93, 45, 145);
 	background-color: rgb(167, 206, 55);
